@@ -13,21 +13,15 @@
     width: 100%;
     height: 100%;
     background: #000;
+    overflow: hidden;
   }
 
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  img {
-    max-width: 100vw;
-    max-height: 100vh;
-    width: auto;
-    height: auto;
-    display: block;
-  }
+ img {
+  width: 100vw;
+  height: 100svh;   /* ← ВАЖНО */
+  object-fit: contain;
+  display: block;
+}
 </style>
 </head>
 <body>
